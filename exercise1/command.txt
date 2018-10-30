@@ -1,2 +1,3 @@
-# ansible hosts -i file
-ansible 192.168.33.20 -i inventory
+# ansible hosts -i file -u user -m ping -k
+# u = user m= module -k = prompts you interactively for the password
+ansible 192.168.33.20 -i inventory -u vagrant -m ping -k
