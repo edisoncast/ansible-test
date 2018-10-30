@@ -1,3 +1,5 @@
 # ansible hosts -i file -u user -m ping -k
 # u = user m= module -k = prompts you interactively for the password
+# in hosts you can use * or all
 ansible 192.168.33.20 -i inventory -u vagrant -m ping -k
+ansible all -i inventory -u vagrant -m command -a "/usr/sbin/yum update -y"
